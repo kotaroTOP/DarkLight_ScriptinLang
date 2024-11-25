@@ -8,7 +8,10 @@ file = open(filename, "w")
 file.write(code)
 file.close()
 file = open(filename, "r")
-code = file.Read()
-for i in range(0, )
+codeLinesLen = len(file.ReadLines())
+for i in range(0, codeLinesLen):
+  codeLine = file.ReadLine(i)
+  for j in range(0, len(codeLine)):
+    codeLine[j]
 if __name__ == "__main__":
   exec(executableCode)
